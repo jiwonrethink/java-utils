@@ -4,7 +4,7 @@ plugins {
 	id("io.spring.dependency-management") version "1.1.0"
 }
 
-group = "com.companywe.xergy"
+group = "jiwon.lee"
 version = "0.0.1-SNAPSHOT"
 java.sourceCompatibility = JavaVersion.VERSION_17
 
@@ -47,7 +47,7 @@ dependencies {
 //}
 
 springBoot {
-	mainClass.set("jiwon.java.utils.common.JavaUtilsApplication")
+	mainClass.set("utils.common.JavaUtilsApplication")
 }
 
 val querydslDir = "$buildDir/generated/sources/annotationProcessor"
