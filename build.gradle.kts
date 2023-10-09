@@ -23,25 +23,15 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 	implementation("org.springframework.boot:spring-boot-starter-validation")
 	implementation("org.springframework.boot:spring-boot-starter-data-redis")
-	implementation("org.springframework.boot:spring-boot-starter-websocket")
-	implementation("org.springframework.boot:spring-boot-starter-security")
 	implementation("org.springframework.cloud:spring-cloud-starter-aws:2.2.6.RELEASE")
 	implementation("com.github.ulisesbocchio:jasypt-spring-boot-starter:3.0.5")
 	implementation("org.apache.commons:commons-lang3:3.12.0")
 	implementation("org.apache.commons:commons-collections4:4.4")
 
-	compileOnly(group = "io.jsonwebtoken", name = "jjwt-api", version = "0.11.2")
-	runtimeOnly(group = "io.jsonwebtoken", name = "jjwt-impl", version = "0.11.2")
-	runtimeOnly(group = "io.jsonwebtoken", name = "jjwt-jackson", version = "0.11.2")
-
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
 
 	runtimeOnly("com.h2database:h2")
 	runtimeOnly("org.postgresql:postgresql")
-
-	implementation("com.querydsl:querydsl-jpa:5.0.0:jakarta")
-	implementation("com.querydsl:querydsl-sql:5.0.0")
-	annotationProcessor("com.querydsl:querydsl-apt:5.0.0:jakarta")
 
 	compileOnly("org.projectlombok:lombok")
 	annotationProcessor("org.projectlombok:lombok")
@@ -57,7 +47,7 @@ dependencies {
 //}
 
 springBoot {
-	mainClass.set("com.companywe.xergy.csms.api.JavaUtilsApplication")
+	mainClass.set("jiwon.java.utils.common.JavaUtilsApplication")
 }
 
 val querydslDir = "$buildDir/generated/sources/annotationProcessor"
